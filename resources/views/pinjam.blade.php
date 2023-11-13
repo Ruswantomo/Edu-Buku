@@ -9,6 +9,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
+
+<form action="/dashboard/pinjam" method="get">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" name="searching" placeholder="Recipient's username" aria-label="Cari" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Cari</button>
+</div>
+</form>
+
 @if($bukus->count())
 <div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach($bukus as $buku)
